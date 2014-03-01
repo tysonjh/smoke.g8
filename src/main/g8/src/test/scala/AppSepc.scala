@@ -1,5 +1,3 @@
-package smoke.examples
-
 import org.scalatest.{ FunSpec, BeforeAndAfterAll }
 
 import scala.concurrent.Await
@@ -8,11 +6,10 @@ import scala.concurrent.duration._
 import smoke._
 import smoke.test._
 
-class BasicExampleAppTest extends FunSpec with BeforeAndAfterAll {
+class AppSpec extends FunSpec with BeforeAndAfterAll {
 
-  val app = BasicExampleApp
+  val app = new BasicExampleSmoke
 
-  override def beforeAll { app.init() }
   override def afterAll { app.shutdown() }
 
   describe("GET /example") {
