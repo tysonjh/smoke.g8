@@ -9,7 +9,7 @@ parallelExecution := false
 scalacOptions ++= Seq("-unchecked", "-deprecation")
 
 libraryDependencies ++= Seq(
-  "com.mdialog" %% "smoke" % "2.0.0-SNAPSHOT",
+  "com.mdialog" %% "smoke" % "2.0.1",
   "org.scalatest" %% "scalatest" % "1.9.1" % "test"
 )
 
