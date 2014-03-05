@@ -17,5 +17,5 @@ credentials += Credentials(Path.userHome / ".mdialog.credentials")
 
 resolvers ++= Seq(
   "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
-  "mDialog snapshots" at "http://mdialog.github.com/snapshots/"
+  "mDialog releases" at "http://mdialog.github.com/releases/"
 )
